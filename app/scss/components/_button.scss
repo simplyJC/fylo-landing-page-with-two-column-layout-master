@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+.button {
+  border: none;
+  height: 40px;
+  background: $clr-accent-bright-blue;
+  color: white;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  &:hover{
+       background: lighten($clr-accent-bright-blue, 10%);
+  }
+}
+  

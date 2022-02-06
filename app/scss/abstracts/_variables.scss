@@ -1,0 +1,18 @@
+$breakpoints: (
+  large: 900px,
+);
+
+// ### Primary
+
+$clr-primary-dark-blue: hsl(243, 87%, 12%);
+$clr-primary-desaturated-blue: hsl(238, 22%, 44%);
+
+// ### Accent
+
+$clr-accent-bright-blue: hsl(224, 93%, 58%);
+$clr-accent-moderate-cyan: hsl(170, 45%, 43%);
+
+// ### Neutral
+
+$clr-neutral-grayish-blue: hsl(240, 75%, 98%);
+$clr-neutral-light-gray: hsl(0, 0%, 75%);

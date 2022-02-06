@@ -1,0 +1,27 @@
+@use '../abstracts/' as *;
+
+.cta {
+  background: $clr-primary-desaturated-blue;
+  padding: 3rem 1rem 3rem 1rem;
+  color: white;
+  text-align: center;
+  &__title{
+      padding: 1rem 0 1rem 0;
+  }
+
+  &__button {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  &__email {
+    width: 100%;
+    margin: 2rem 0 0.5rem 0;
+  }
+  &__form {
+    width: 15.6rem;
+    &-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

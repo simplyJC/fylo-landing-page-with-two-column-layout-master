@@ -1,0 +1,38 @@
+@use '../abstracts/' as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem;
+  max-width: 300px;
+  max-height: 200px;
+  &__content {
+    font-size: 0.8rem;
+    text-align: left;
+    color: $clr-primary-dark-blue;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  &__profile {
+    display: flex;
+  }
+  &__avatar {
+    border-radius: 50%;
+    width: 40px;
+  }
+  &__name-container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    padding: 0 0 0 1rem;
+  }
+  &__name {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  &__role {
+    font-size: 0.6rem;
+    font-style: normal;
+  }
+}
