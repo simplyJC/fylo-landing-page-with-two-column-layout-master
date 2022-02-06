@@ -5,23 +5,51 @@
   padding: 3rem 1rem 3rem 1rem;
   color: white;
   text-align: center;
-  &__title{
-      padding: 1rem 0 1rem 0;
+  @include media-query(large) {
+    display: flex;
+    // justify-content: flex-start;
+    //align-items: flex-start;
+    text-align: left;
+    padding: 5rem 1rem 5rem 1rem;
+  }
+  &__title {
+    padding: 1rem 0 1rem 0;
   }
 
   &__button {
     width: 100%;
     font-size: 0.8rem;
+    @include media-query(large) {
+      max-width: 10rem;
+    }
   }
   &__email {
     width: 100%;
     margin: 2rem 0 0.5rem 0;
+    @include media-query(large) {
+    }
   }
   &__form {
-    width: 15.6rem;
+    max-width: 15.6rem;
+    @include media-query(large) {
+      max-width: 40rem;
+    }
     &-container {
       display: flex;
       justify-content: center;
+      align-items: center;
+      width: 100%;
+      @include media-query(large) {
+        justify-content: center;
+        padding: 0 0 0 3rem;
+        width: 100%;
+      }
+    }
+  }
+  &__container-1 {
+    max-width: 533px;
+    @include media-query(large) {
+     // padding: 0 5rem 0 4rem;
     }
   }
 }

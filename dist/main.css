@@ -80,6 +80,7 @@ select {
   display: flex;
   margin: 1.5rem 1rem 1rem 1rem;
   justify-content: space-between;
+  max-width: 80rem;
 }
 .header__logo-container {
   width: 25%;
@@ -142,12 +143,34 @@ select {
 body {
   width: 100%;
   font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  display: grid;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 1280px;
 }
 
 .footer {
   background: #070439;
+  width: 100%;
   color: white;
   padding: 4rem 1rem 1rem 1rem;
+}
+.footer__image-container {
+  padding: 1rem 0 1rem 0;
+}
+.footer__links-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 900px) {
+  .footer__links-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 .footer__links-1, .footer__links-2 {
   list-style: none;
@@ -160,6 +183,11 @@ body {
 }
 .footer__contacts-container {
   padding: 1rem 0 1rem 0;
+}
+@media (min-width: 900px) {
+  .footer__contacts-container {
+    padding: 0 0 1rem 0;
+  }
 }
 .footer__phone-container {
   display: flex;
@@ -177,6 +205,11 @@ body {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+@media (min-width: 900px) {
+  .socials__icons {
+    padding: 1rem 8rem 0 0;
+  }
 }
 
 .icon {
@@ -199,16 +232,36 @@ body {
 
 .hero {
   margin: 6.125rem 1rem 5.6rem 1rem;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+  }
 }
 .hero__title {
-  text-align: center;
-  padding: 1.25rem 0 0.75rem 0;
+  padding: 1.25rem 1rem 0.75rem 1rem;
   color: #070439;
+}
+@media (min-width: 900px) {
+  .hero__title {
+    font-size: 2rem;
+  }
 }
 .hero__content {
   padding: 0.75rem 0 1rem 0;
-  text-align: center;
   color: #585989;
+}
+@media (min-width: 900px) {
+  .hero__form-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 .hero__email {
   display: block;
@@ -230,8 +283,18 @@ body {
   font-size: 0.8rem;
   padding-left: 1rem;
 }
+@media (min-width: 900px) {
+  .hero__email {
+    max-width: 20rem;
+  }
+}
 .hero__button {
   width: 100%;
+}
+@media (min-width: 900px) {
+  .hero__button {
+    max-width: 12.5rem;
+  }
 }
 
 .productive {
@@ -239,13 +302,40 @@ body {
   background: #f6f6fe;
   text-align: center;
 }
+@media (min-width: 900px) {
+  .productive {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 6rem 0;
+  }
+}
+.productive__container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
 .productive__curve-bg img {
   width: 100%;
+}
+@media (min-width: 900px) {
+  .productive__curve-bg img {
+    background: url("/images/bg-curve-desktop.svg");
+  }
 }
 .productive__title {
   font-size: 1rem;
   padding: 5.6rem 1rem 0 1rem;
   color: #070439;
+  font-weight: bold;
+}
+@media (min-width: 900px) {
+  .productive__title {
+    font-size: 1.8rem;
+  }
 }
 .productive__content {
   padding: 1rem 1.2rem;
@@ -265,6 +355,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5px;
+  margin: 0 0 0 1rem;
   padding: 0.3rem 0 0.3rem 0;
 }
 .productive__link-container:hover {
@@ -274,6 +365,13 @@ body {
   display: flex;
   justify-content: center;
   padding: 3rem 0 3rem 0;
+  width: 100%;
+}
+@media (min-width: 900px) {
+  .productive__card-container {
+    justify-content: flex-start;
+    padding: 3rem 0 0 1rem;
+  }
 }
 
 .cta {
@@ -282,6 +380,13 @@ body {
   color: white;
   text-align: center;
 }
+@media (min-width: 900px) {
+  .cta {
+    display: flex;
+    text-align: left;
+    padding: 5rem 1rem 5rem 1rem;
+  }
+}
 .cta__title {
   padding: 1rem 0 1rem 0;
 }
@@ -289,14 +394,36 @@ body {
   width: 100%;
   font-size: 0.8rem;
 }
+@media (min-width: 900px) {
+  .cta__button {
+    max-width: 10rem;
+  }
+}
 .cta__email {
   width: 100%;
   margin: 2rem 0 0.5rem 0;
 }
 .cta__form {
-  width: 15.6rem;
+  max-width: 15.6rem;
+}
+@media (min-width: 900px) {
+  .cta__form {
+    max-width: 40rem;
+  }
 }
 .cta__form-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 900px) {
+  .cta__form-container {
+    justify-content: center;
+    padding: 0 0 0 3rem;
+    width: 100%;
+  }
+}
+.cta__container-1 {
+  max-width: 533px;
 }/*# sourceMappingURL=main.css.map */

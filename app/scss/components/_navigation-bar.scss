@@ -1,16 +1,20 @@
-.header{
+@use '../abstracts/' as *;
+
+.header {
+  display: flex;
+  margin: 1.5rem 1rem 1rem 1rem;
+  justify-content: space-between;
+  max-width:80rem;
+
+  &__logo {
+    &-container {
+      width: 25%;
+      align-self: center;
+    }
+  }
+  &__links {
     display: flex;
-    margin: 1.5rem 1rem 1rem 1rem;
-    justify-content: space-between;
-    &__logo{
-        &-container{
-            width: 25%;
-            align-self: center;
-        }
-    }
-    &__links{
-        display: flex;
-        list-style-type:none;
-        gap: 10px;
-    }
+    list-style-type: none;
+    gap: 10px;
+  }
 }
