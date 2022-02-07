@@ -1,74 +1,74 @@
 @use '../abstracts/' as *;
 
+.footer {
+  max-width: 80rem;
+  margin: 0 auto;
+  color: white;
+  padding: 4rem 2rem 1rem 2rem;
+  &__main-container {
+    background: $clr-primary-dark-blue;
+  }
+  &__image-container {
+    padding: 1rem 0 1rem 0;
+  }
+  &__links-container {
+    display: flex;
+    flex-direction: column;
+    @include media-query(large) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+  &__links-1,
+  &__links-2 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    gap: 0.5rem;
+  }
+  &__contacts-container {
+    padding: 1rem 0 1rem 0;
+    @include media-query(large) {
+      padding: 0 0 1rem 0;
+    }
+  }
+  &__phone-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+  }
+  &__email-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+}
 
- .footer{
-   background: $clr-primary-dark-blue;
-   width: 100%;
-   color: white;
-   padding: 4rem 1rem 1rem 1rem;
-   &__image-container{
-     padding: 1rem 0 1rem 0;
-   }
-   &__links-container{
-     display: flex;
-     flex-direction: column;
-     @include media-query (large){
-       flex-direction: row;
-       justify-content: space-between;
-       align-items: flex-start;
-     }
-   }
-   &__links-1, &__links-2{
-     list-style: none;
-     display: flex;
-     flex-direction:column;
-     align-content: flex-start;
-     justify-content: flex-start;
-     padding: 0;
-     gap: 0.5rem;
-
-
-   }
-   &__contacts-container{
-     padding: 1rem 0 1rem 0;
-     @include media-query(large){
-        padding: 0  0 1rem 0;
-     }
-   }
-   &__phone-container{
-     display: flex;
-     gap: 1rem;
-        align-items: center;
-        padding: 1rem 0 1rem 0;
-   }
-   &__email-container{
-     display: flex;
-     gap: 1rem;
-     align-items: center;
-   }
-
-
- }
-
-.socials__icons{
+.socials__icons {
   //@at-root:  0 auto;
   display: flex;
   justify-content: center;
-  gap: 1rem ; 
-  @include media-query (large){
-    padding: 1rem  8rem 0 0;
-
+  gap: 1rem;
+ 
+  @include media-query(large) {
+    padding: 1rem 8rem 0 0;
   }
-  
-
 }
- .icon{
-   height: 30px;
-   width: 30px;
-   border: 2px solid white;
-   border-radius: 50%;
-   fill: white;
-  
+.icon {
+  height: 30px;
+  width: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  fill: white;
+ &:hover{
+   border: 2px solid $clr-accent-bright-blue;
+     fill: $clr-accent-bright-blue;
+ }
 }
 
 .attribution {

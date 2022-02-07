@@ -2,9 +2,11 @@
 
 .header {
   display: flex;
-  margin: 1.5rem 1rem 1rem 1rem;
+  margin: 1.5rem auto;
   justify-content: space-between;
+  padding: 0 2rem;
   max-width:80rem;
+
 
   &__logo {
     &-container {
@@ -16,5 +18,13 @@
     display: flex;
     list-style-type: none;
     gap: 10px;
+    & a{
+      text-decoration: none;
+      color: $clr-primary-dark-blue;
+      &:hover{
+        color: $clr-accent-moderate-cyan;
+        text-decoration: underline;
+      }
+    }
   }
 }

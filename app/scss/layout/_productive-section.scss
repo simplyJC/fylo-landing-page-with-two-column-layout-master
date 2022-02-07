@@ -1,15 +1,22 @@
 @use '../abstracts' as *;
 .productive {
-  padding: 6rem 0 0 0;
-  background: $clr-neutral-grayish-blue;
+  //@at-root: 6rem 0 0 0;
+   padding: 6rem 1rem;
+  //background: $clr-neutral-grayish-blue;
   text-align: center;
+   max-width: 80rem;
+  margin: 0 auto;
   @extend %border;
+
   @include media-query(large) {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    padding:  0 0 6rem 0; 
+      padding: 6rem 2rem;
+  }
+  &__main-container{
+  background: $clr-neutral-grayish-blue;
   }
   &__container-2 {
     display: flex;
@@ -18,10 +25,18 @@
     align-items: flex-start;
     text-align: left;
   }
-  &__curve-bg img {
+  &__curve-bg{
+
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  &__curve-bg img{
     width: 100%;
+      background-size: 1280px;
+   // background: url('/images/bg-curve-mobile.svg')  no-repeat;
     @include media-query(large) {
-      background: url('/images/bg-curve-desktop.svg');
+    //  background: url('/images/bg-curve-desktop.svg') no-repeat;
+ 
     }
   }
   &__title {
@@ -29,14 +44,22 @@
     padding: 5.6rem 1rem 0 1rem;
     color: $clr-primary-dark-blue;
     font-weight: bold;
+    width: 100%;
+    text-align: center;
     @include media-query (large) {
       font-size: 1.8rem;
+      text-align: left;
 
     }
   }
   &__content {
     padding: 1rem 1.2rem;
     color: $clr-primary-desaturated-blue;
+    text-align: center;
+    @include media-query (large){
+      text-align: left;
+    }
+
   }
   &__link {
     color: $clr-accent-moderate-cyan;
