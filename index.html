@@ -19,19 +19,17 @@
     <script src="app/js/main.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="container header">
-        <div class="header__logo-container">
-          <a href="#"><img class="header__logo" src="/images/logo.svg" alt="" /></a>
-        </div>
-        <navigation class="header__navigation">
-          <ul class="header__links">
-            <li class="header__link"><a href="#">Features</a></li>
-            <li class="header__link"><a href="#">Team</a></li>
-            <li class="header__link"><a href="#">Sign In</a></li>
-          </ul>
-        </navigation>
+    <header class="container header">
+      <div class="header__logo-container">
+        <a href="#"><img class="header__logo" src="/images/logo.svg" alt="Logo" aria-label="Go to Homepage" /></a>
       </div>
+      <navigation class="header__navigation">
+        <ul class="header__links">
+          <li class="header__link"><a href="#">Features</a></li>
+          <li class="header__link"><a href="#">Team</a></li>
+          <li class="header__link"><a href="#">Sign In</a></li>
+        </ul>
+      </navigation>
     </header>
 
     <main class="">
@@ -49,7 +47,7 @@
             them wherever you need, share and collaborate with friends, family,
             and co-workers.
           </p>
-          <form action="" class="hero__form-container email-form" novalidate>
+          <form action="/" class="hero__form-container email-form" novalidate>
             <input
               class="hero__email"
               type="email"
@@ -128,8 +126,8 @@
             </p>
           </div>
           <div class="cta__form-container cta__container-2">
-            <form action="" class="cta__form email-form" novalidate>
-              <input type="email" name="" id="email" class="cta__email"
+            <form action="/" class="cta__form email-form" novalidate>
+              <input type="email" name="email" id="email" class="cta__email"
               placeholder="Enter your email.." />
               <p class="cta__info-text"></p>
               <button
