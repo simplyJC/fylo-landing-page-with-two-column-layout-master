@@ -5,8 +5,7 @@
   margin: 1.5rem auto;
   justify-content: space-between;
   padding: 0 2rem;
-  max-width:80rem;
-
+  max-width: 80rem;
 
   &__logo {
     &-container {
@@ -17,13 +16,27 @@
   &__links {
     display: flex;
     list-style-type: none;
-    gap: 10px;
-    & a{
+    gap: 1rem;
+    font-weight: bold;
+    & a {
+      position: relative;
       text-decoration: none;
       color: $clr-primary-dark-blue;
-      &:hover{
-        color: $clr-accent-moderate-cyan;
-        text-decoration: underline;
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 3px;
+        bottom: -5px;
+        left: 0;
+        background-color: $clr-accent-moderate-cyan;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+
+      &:hover::before {
+        transform: scaleX(1);
       }
     }
   }

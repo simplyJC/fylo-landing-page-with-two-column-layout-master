@@ -90,15 +90,28 @@ select {
 .header__links {
   display: flex;
   list-style-type: none;
-  gap: 10px;
+  gap: 1rem;
+  font-weight: bold;
 }
 .header__links a {
+  position: relative;
   text-decoration: none;
   color: #070439;
 }
-.header__links a:hover {
-  color: #3c9f8f;
-  text-decoration: underline;
+.header__links a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #3c9f8f;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.header__links a:hover::before {
+  transform: scaleX(1);
 }
 
 .button {
@@ -295,6 +308,7 @@ body {
   height: 40px;
   padding-inline: 1rem;
   border-radius: 0.2rem;
+  outline: none;
 }
 .hero__email::-moz-placeholder {
   font-size: 0.8rem;
@@ -461,6 +475,7 @@ body {
 .cta__email {
   width: 100%;
   margin: 2rem 0 0 0;
+  outline: none;
 }
 .cta__email::-moz-placeholder {
   font-size: 0.8rem;
