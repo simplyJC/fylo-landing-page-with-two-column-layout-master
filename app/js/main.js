@@ -32,47 +32,6 @@ buttonCta.addEventListener('click', (e) => {
   }
 });
 
-// forms.forEach((form) => {
-//   form.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     inputs.forEach((input) => {
-//       if (validateEmail(input.value)) {
-//         if (input.classList.contains('hero__email')) {
-//           infoTextHero.innerHTML = 'Please Check your Email';
-//           infoTextHero.style.color = 'black';
-//         } else {
-//           infoTextHero.innerHTML = 'Incorrect Email Format';
-//           infoTextHero.style.color = 'red';
-//         }
-//       }
-
-//       if (input.classList.contains('cta__email')) {
-//         if (validateEmail(input.value)) {
-//           infoTextCta.innerHTML = 'Please Check your Email';
-//           infoTextCta.style.color = 'black';
-//         } else {
-//           infoTextCta.innerHTML = 'Incorrect Email Format';
-//           infoTextCta.style.color = 'red';
-//         }
-//       }
-//     });
-
-// if (validateEmail(input.value)) {
-//   if (form.classList.contains('hero__form-container')) {
-//     infoTextHero.innerHTML = 'Please Check your Email';
-//     infoTextHero.style.color = 'black';
-//   } else {
-//     infoTextCta.innerHTML = 'Please Check your Email';
-//     infoTextCta.style.color = 'black';
-//   }
-// } else {
-//   infoTextHero.innerHTML = 'Incorrect Email Format';
-//   infoTextHero.style.color = 'red';
-//   infoTextCta.innerHTML = 'Incorrect Email Format';
-//   infoTextCta.style.color = 'red';
-// }
-//   });
-// });
 
 function validateEmail(email) {
   let emailCheck =
