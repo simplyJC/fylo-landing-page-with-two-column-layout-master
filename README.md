@@ -65,7 +65,7 @@ I planning to take for challenges in frontendmentor to further enhance my skills
 
 ## Author
 
-- Website - [SimplyJC](www.simplyjc.com)
+- Website - [SimplyJC](https://www.simplyjc.com)
 - Frontend Mentor - [@simplyJC](https://www.frontendmentor.io/profile/simplyJC)
 - Twitter - [@jcaltamia](https://twitter.com/jcaltamia)
 
