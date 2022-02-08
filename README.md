@@ -14,7 +14,6 @@ This is a solution to the [Fylo landing page with two column layout challenge on
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 
@@ -33,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/simplyJC/fylo-landing-page-with-two-column-layout-master](https://github.com/simplyJC/fylo-landing-page-with-two-column-layout-master)
+- Live Site URL: [https://brave-lovelace-d420d0.netlify.app/](https://brave-lovelace-d420d0.netlify.app/)
 
 ## My process
 
@@ -66,9 +65,9 @@ I planning to take for challenges in frontendmentor to further enhance my skills
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [SimplyJC](www.simplyjc.com)
+- Frontend Mentor - [@simplyJC](https://www.frontendmentor.io/profile/simplyJC)
+- Twitter - [@jcaltamia](https://twitter.com/jcaltamia)
 
 
 
